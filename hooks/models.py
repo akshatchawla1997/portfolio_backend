@@ -57,3 +57,4 @@ class Contact_Me(models.Model):
 
     def __str__(self):
         return self.subject
+    
