@@ -58,5 +58,3 @@ class Contact_Me(models.Model):
     def __str__(self):
         return self.subject
     
-class Send_Resume(models.Model):
-    email = models.EmailField()
