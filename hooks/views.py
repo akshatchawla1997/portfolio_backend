@@ -8,3 +8,20 @@ from .serializers import BlogSerializers, EducationSerializers, ExperienceSerial
 class BlogsViews(viewsets.ModelViewSet):
     queryset = Blogs.objects.all()
     serializer_class = BlogSerializers
+
+class ExperienceViewSet(viewsets.ModelViewSet):
+    queryset = Experience.objects.all()
+    serializer_class = ExperienceSerializers
+
+class EducationViewSet(viewsets.ModelViewSet):
+    queryset = Education.objects.all()
+    serializer_class = EducationSerializers
+
+class ProjectsViewSet(viewsets.ModelViewSet):
+    queryset = Projects.objects.all()
+    serializer_class = ProjectsSerializers
+
+class ContactmeViewSet(viewsets.ModelViewSet):
+    queryset = Contact_Me.objects.all()
+    serializer_class = ContactMeSerializers
+
