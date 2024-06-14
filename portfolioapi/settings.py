@@ -55,6 +55,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'portfolioapi.wsgi.application'
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'akshatchawla1997@gmail.com'
+EMAIL_HOST_PASSWORD = 'your_email_password'
+
+# Additional configurations (Optional)
+DEFAULT_FROM_EMAIL = 'akshatchawla1997@gmail.com'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
